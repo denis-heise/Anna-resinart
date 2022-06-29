@@ -1,0 +1,22 @@
+@media (max-width: 920px) {
+    .content__materials {
+        flex-direction: column;
+    }
+    .content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) and (orientation: portrait) {
+    .content__cards-image {
+        min-width: 0;
+    }
+}
+@media (max-width: 280px) {
+    .popup__content {
+        min-width: 100px;
+    }
+    .content__text {
+        font-size: 16px;
+    }
+}

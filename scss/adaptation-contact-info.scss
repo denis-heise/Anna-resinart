@@ -1,0 +1,46 @@
+@media (max-width: 480px) and (orientation: portrait) {
+    .footer-container__contact-title {
+        position: relative;
+        padding-left: 25px;
+        cursor: pointer;
+
+        &::before, &::after {
+            content: '';
+            width: 10px;
+            height: 2px;
+            background-color: #fff;
+            position: absolute;
+            top: 12px;
+            transition: all 0.5s ease 0s;
+
+            .active{
+                background-color: rgb(183, 255, 183);
+            }
+        }
+
+        &::before {
+            transform: rotate(40deg);
+            left: 0;
+
+            .active{
+                transform: rotate(-40deg);
+            }
+        }
+        &::after {
+            transform: rotate(-40deg);
+            left: 8px;
+
+            .active{
+                transform: rotate(40deg);
+            }
+        }
+    }
+
+    .footer-container__contact-text {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+}
