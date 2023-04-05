@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="icon" href="./img/fire.ico">
+    <link rel="stylesheet" href="./css/main-page.css">
+    <script src="https://kit.fontawesome.com/a4387b9d19.js" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Le_Cp4bAAAAAGU9N211yiaL-yvMSkMPfgDecbjk"></script>
+</head>
+<body>
+    <div class="wrapper" oncontextmenu="return false" ondragstart ="return false">
+        <header id="header" class="header-container">
+            <img src="./img/header.jpg" alt="Header">
+        </header>
+        <div class="content"> 
+            <div class="content__block">  
+                <div class="content__container-content">
+                    <div class="content__materials">
+                        <div class="content__text">
+                            <h1>Обо мне</h1>
+                            <p>
+                                Меня зовут Анна и я - художник-смолянист, от кончиков волос до кончиков пальцев.
+                                Эпоксидная смола пришла в мою жизнь внезапно и сразу поглотила мое творческое пространство.
+                            </p>
+                            <P>
+                                Более 10 лет своей жизни я посвятила творчеству: пейзажи, Pop-art  портреты и конечно изделия из смолы - все это уже многие годы радует моих клиентов. Прошло больше года, как я поставила первые капли смолы на картину и создала свою первую подставку, и теперь с уверенностью могу сказать, что смола неотъемлемая часть моей жизни. Огонь в глазах, смола в руках. Рада знакомству!
+                            </P>
+                        </div>             
+                        <div class="content__cards-image">
+                            <img src="./img/photo.jpg" alt="Аватарка">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content__container-content">
+                    <div class="content__materials">
+                        <div class="content__cards-image">
+                            <img src="./img/about.jpg" alt="Товары">
+                        </div>
+                        <div class="content__text">
+                            <h1>Про товары</h1>
+                            <p>
+                                Тут вы можете подробнее узнать какие изделия я уже делаю 
+                                (подставки, броши, детали для сумочек и многое другое), 
+                                цвета, дизайны, примеры работ. А так же оформить свой собственный заказ!            
+                            </p>
+                            <forma>
+                                <a href="./catalog.html">
+                                    <button class="content__button" name="catalog">
+                                        Подробнее
+                                    </button>
+                                </a>
+                            </form>    
+                        </div>             
+                    </div>
+                </div>
+
+                <div id="certificate" class="content__container-content">
+                    <div class="content__materials">
+                        <div class="content__text">
+                            <h1>Подарочные сертификаты</h1>
+                            <p>
+                                Не уверен, что выбранный вами дизайн понравится или не можете определиться с формой для подарка? Подарочный сертификат на любую сумму или любой вид изделия станет отличным решением! Для оформления заявки кликай ниже.
+                            </p>
+
+                            <form action="/order.html">
+                                <button class="content__button popup-link" name="Сертификат">
+                                    Заказать сертификат
+                                </button>
+                            </form>   
+                        </div>             
+                        <div class="content__cards-image">
+                            <img src="./img/certificate.jpg" alt="Сертификат">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <span class="button-top" aria-hidden="true">
+            <i class="fas fa-long-arrow-alt-up"></i>
+        </span>
+        
+        <footer class="footer-container">
+            <div class="footer-container__contact">
+                <b class="footer-container__contact-title">Контактная информация</b>
+                <div class="footer-container__contact-text">
+                    <p class="footer-container__link">
+                        <a href="https://www.instagram.com/" target="_blank" class="fab fa-instagram"> Instagram</a>
+                    </p>
+                    <p class="footer-container__link">
+                        <a href="tel:380500000000" style="margin-left: -5px;">+38 050 000 00 00</a>
+                    </p>
+                    <p class="footer-container__link">
+                        <a href="mailto:email@gmail.com">email@gmail.com</a>
+                    </p>
+                </div>
+                <div class="footer-container__copyright">
+                    <script>
+                        document.write("&copy; "+ new Date().getFullYear()+ " ФИО");
+                    </script>
+                </div>
+            </div>
+        </footer> 
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <form action="send.php" method="POST">
+                    <img src="./img/close.png" alt="close" class="popup__close close-popup">
+                    <div class="popup__title">Оставьте Ваши контактные данные для завершения заказа</div>
+                    <div class="popup__input">
+                        <input type="text" name="name" placeholder=" Имя" max="15" required>
+                        <input type="tel" name="phone"placeholder=" Номер телефона" required>
+                    </div>    
+                    <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response" />
+                    <input type="hidden" name="formData" value="Сертификат" class="nameProduct">
+                    <button type="submit" class="content__button" name="submit">
+                        Заказать
+                    </button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./js/popup.js"></script>
+    <script src="./js/top.js"></script>
+    <script src="./js/footer.js"></script>
+    <script src="./js/send.js"></script>
+    <script src="./js/recapcha.js"></script>
+</body>
+</html>

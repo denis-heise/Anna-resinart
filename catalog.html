@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link rel="icon" href="./img/fire.ico">
+    <link rel="stylesheet" href="./css/catalog-page.css">
+    <script src="https://kit.fontawesome.com/a4387b9d19.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper" oncontextmenu="return false" ondragstart ="return false">
+        <header id="header" class="header-container">
+            <img src="./img/header.jpg" alt="Header">
+        </header>
+
+        <div class="burger-menu__wrapper">
+            <div class="burger-menu__body">
+                <div class="burger-menu__strip">
+                    <span></span>
+                </div>
+            </div>
+            <nav class="burger-menu__header">
+                <ul class="burger-menu__list">
+                    <li>
+                        <a href="./" class="burger-menu__link">Главная</a>
+                    </li>
+                    <li>
+                        <a class="burger-menu__link">Каталог</a>
+                    </li>                        
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content-products">
+            <div class="content-products__container"> 
+                <div class="content-products__block">
+                    <a href="./products/brooches.html">
+                        <img class="content-products__photo-product" src="img/catalog/brooches.jpg"  alt="Броши">
+                    </a>
+                </div>
+                <div class="content-products__name-product">Броши</div>
+            </div>
+            <div class="content-products__container"> 
+                <div class="content-products__block">
+                    <a href="./products/details-for-bags.html">
+                        <img class="content-products__photo-product" src="img/catalog/bags.jpg"  alt="Детали для сумок">
+                    </a>
+                </div>
+                <div class="content-products__name-product">Детали для сумок</div>
+            </div>
+            <div class="content-products__container"> 
+                <div class="content-products__block">
+                    <a href="./products/palettes.html">
+                        <img class="content-products__photo-product" src="img/catalog/palettes.jpg"  alt="Палитры">
+                    </a>
+                </div>
+                <div class="content-products__name-product">Палитры</div>
+            </div>
+            <div class="content-products__container"> 
+                <div class="content-products__block">
+                    <a href="./products/cup-holders-and-trays.html">
+                        <img class="content-products__photo-product" src="img/catalog/cup holders and trays.jpg"  alt="Подстаканники и разносы">
+                    </a>
+                </div>
+                <div class="content-products__name-product">Подстаканники и разносы</div>
+            </div>
+            <div class="content-products__container"> 
+                <div class="content-products__block">
+                    <a href="./products/decorations.html">
+                        <img class="content-products__photo-product" src="img/catalog/decorations.jpg"  alt="Украшения">
+                    </a>
+                </div>
+                <div class="content-products__name-product">Украшения</div>
+            </div>
+            <div class="content-products__container"> 
+                <div class="content-products__block">
+                    <a href="./products/other.html">
+                        <img class="content-products__photo-product" src="img/catalog/other.jpg"  alt="Прочее">
+                    </a>
+                </div>
+                <div class="content-products__name-product">Прочее</div>
+            </div>
+        </div>
+
+        <!--   Каталог моб. версия   -->
+        <div class="slider">
+            <div class="slider-arrows">
+                <div type="button" class="prev fas fa-arrow-circle-left"></div>
+                <div type="button" class="next fas fa-arrow-circle-right"></div>
+            </div>
+            <div class="slider-list">
+            <div class="slider-track">
+                <div class="slide">
+                    <a href="./products/brooches.html">
+                        <img class="slide__img" src="img/catalog/brooches.jpg"  alt="Броши">
+                    </a>
+                    <div class="slide__text content__text">Броши</div>
+                </div>
+                <div class="slide">
+                    <a href="./products/details-for-bags.html">
+                        <img class="slide__img" src="img/catalog/bags.jpg"  alt="Детали для сумок">
+                    </a>
+                    <div class="slide__text slide__text content__text">Детали для сумок</div>
+                </div>
+                <div class="slide">
+                    <a href="./products/palettes.html">
+                        <img class="slide__img" src="img/catalog/palettes.jpg"  alt="Палитры">
+                    </a>
+                    <div class="slide__text content__text">Палитры</div>
+                </div>
+                <div class="slide">
+                    <a href="./products/cup-holders-and-trays.html">
+                        <img class="slide__img" src="img/catalog/cup holders and trays.jpg"  alt="Подстаканники и разносы">
+                    </a>
+                    <div class="slide__text content__text">Подстаканники и разносы</div>
+                </div>
+                <div class="slide">
+                    <a href="./products/decorations.html">
+                        <img class="slide__img" src="img/catalog/decorations.jpg"  alt="Украшения">
+                    </a>
+                    <div class="slide__text content__text">Украшения</div>
+                </div>
+                <div class="slide">
+                    <a href="./products/other.html">
+                        <img class="slide__img" src="img/catalog/other.jpg"  alt="Прочее">
+                    </a>
+                    <div class="slide__text content__text">Прочее</div>
+                </div>
+            </div>
+            </div>
+
+        </div>
+
+        <footer class="footer-container">
+            <div class="footer-container__contact">
+                <b class="footer-container__contact-title">Контактная информация</b>
+                <div class="footer-container__contact-text">
+                    <p class="footer-container__link">
+                        <a href="https://www.instagram.com/" target="_blank" class="fab fa-instagram"> Instagram</a>
+                    </p>
+                    <p class="footer-container__link">
+                        <a href="tel:380500000000" style="margin-left: -5px;">+38 050 000 00 00</a>
+                    </p>
+                    <p class="footer-container__link">
+                        <a href="mailto:email@gmail.com">email@gmail.com</a>
+                    </p>
+                </div>
+                <div class="footer-container__copyright">
+                    <script>
+                        document.write("&copy; "+ new Date().getFullYear()+ " ФИО");
+                    </script>
+                </div>
+            </div>
+        </footer>
+   </div>
+   <script src="./js/burger-menu.js"></script>
+   <script src="./js/footer.js"></script>
+   <script src="./js/slider.js"></script>
+</body>
+</html>

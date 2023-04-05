@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница заказа</title>
+    <link rel="icon" href="./img/fire.ico">
+    <link rel="stylesheet" href="css/order-page.css">
+    <script src="https://kit.fontawesome.com/a4387b9d19.js" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Le_Cp4bAAAAAGU9N211yiaL-yvMSkMPfgDecbjk"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header id="header" class="header-container">
+            <img src="./img/header.jpg" alt="Header">
+        </header>
+    
+        <div class="content">
+            <a href="./index.html" class="button-back"> ← На главную</a>
+
+            <div class="order__content">
+                <div class="order__title">Оставьте Ваши контактные данные для завершения заказа</div>
+                <div class="order__input">
+                    <input type="text" name="name" placeholder=" Имя" max="15" required>
+                    <input type="tel" name="phone"placeholder=" Номер телефона" required>
+                    <input type="text" name="formData" placeholder=" Название товара" max="35" required>
+                </div>    
+                <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response" />
+                <button class="content__button order-link" name="order" style="margin-top:10px">
+                    Заказать
+                </button>
+            </div>
+        </div>
+    
+        <footer class="footer-container">
+            <div class="footer-container__contact">
+                <b>Контактная информация</b>
+                <p class="footer-container__link">
+                    <a href="https://www.instagram.com/" target="_blank" class="fab fa-instagram"> Instagram</a>
+                </p>
+                <p class="footer-container__link">
+                    <a href="tel:380500000000" style="margin-left: -5px;">+38 050 000 00 00</a>
+                </p>
+                <p class="footer-container__link">
+                    <a href="mailto:email@gmail.com">email@gmail.com</a>
+                </p>
+                <div class="footer-container__copyright">
+                    <script>
+                        document.write("&copy; "+ new Date().getFullYear()+ " ФИО");
+                    </script>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/recapcha.js"></script>
+</body>
+</html>
